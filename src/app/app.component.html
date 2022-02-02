@@ -18,10 +18,10 @@
           .
         </p>
         <div class="card p-3 my-3 max-input-width">
-          <h3>
+          <h6>
             Example
             <small>(paste into textarea)</small>
-          </h3>
+          </h6>
           <pre class="bg-light p-3">
   Date:
      04/08/2022
@@ -29,10 +29,10 @@
      Eric</pre
           >
         </div>
-        <h3>
+        <h6>
           Example Result:
           <small>04/08/2022, Eric</small>
-        </h3>
+        </h6>
       </div>
       <textarea
         [(ngModel)]="unformattedText"
@@ -45,7 +45,7 @@
       ></textarea>
       <ng-container *ngIf="data.length">
         <div class="max-input-width bg-info p-3">
-          <h3>Result</h3>
+          <h6>Result</h6>
           <pre class="white-space-normal">
             {{ data }}
           </pre>
